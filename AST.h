@@ -1,6 +1,7 @@
 ////////////////////////////////////////////////////
 // chapter 2 AST abstract syntax tree
 ////////////////////////////////////////////////////
+
 /// ExprAST - Base class for all expression nodes.
 class ExprAST {
 public:
@@ -40,6 +41,9 @@ public:
   CallExprAST(const std::string &callee, std::vector<ExprAST*> &args)
     : Callee(callee), Args(args) {}
 };
+
+
+
 /// PrototypeAST - This class represents the "prototype" for a function,
 /// which captures its name, and its argument names (thus implicitly the number
 /// of arguments the function takes).
@@ -59,3 +63,5 @@ public:
   FunctionAST(PrototypeAST *proto, ExprAST *body)
     : Proto(proto), Body(body) {}
 };
+
+
