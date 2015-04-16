@@ -1,0 +1,8 @@
+It is implementation of table of content LLVM to build a compiler
+
+compile the program
+
+clang++ -g -03 filename
+
+
+
